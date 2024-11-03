@@ -29,8 +29,10 @@ def randomized_partition(arr, low, high):
     return partition(arr, low, high)
 
 # Input from user
-input_array = input("Enter the elements of the array separated by spaces: ")
-arr = list(map(int, input_array.split()))
+# input_array = input("Enter the elements of the array separated by spaces: ")
+# arr = list(map(int, input_array.split()))
+
+arr = [random.randint(1, 1000) for _ in range(1000)]
 
 # Deterministic Quick Sort
 det_arr = arr.copy()  # Copy to preserve original array
